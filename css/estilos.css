@@ -49,18 +49,37 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;	
+	background-image: linear-gradient(#032C55,black);
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .header img{
 	height: 70px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	transition: height 1s,width 1s;
+}
+.header img:hover{
+	height: 80px;
 }
 .header h1{
 	color: white;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	animation-duration: 3s;
+	animation-name: apareceTitulo;
+	animation-iteration-count: infinite;
 }
+@keyframes apareceTitulo{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
 
 .iconos{
 	display:inline-block;
@@ -78,7 +97,9 @@ body{
 	grid-area: navegacion;
 	background-color: #0A233D;
 	height: 50px;
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
+	background-image: linear-gradient(#032C55,#0A233D);
+		
 }
 .navegacion a{
 	text-decoration: none;
@@ -116,7 +137,8 @@ body{
 .subtitulo{
 	grid-area: subtitulo;
 	background-color: rgba(0, 0, 0, .5);
-	height: 100px;	
+	height: 100px;
+	background-image: linear-gradient(#032C55,black);	
 }
 .subtitulo__texto{
 	grid-area: subtitulo;
@@ -139,9 +161,14 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 }
 .imagenesGrid__alineacion img{
 	height: 400px;
+	transition: height 1s, width 1s;
+}
+.imagenesGrid__alineacion img:hover{
+	height: 430px;
 }
 .imagenesGrid__alineacion h2{
 	color: white;
@@ -163,6 +190,7 @@ body{
 	align-items: center;
 	margin-bottom: 30px;
 	margin-top: 30px;
+	background-image: linear-gradient(#032C55,black);
 }
 .contenedorMensaje p{
 	color: white;
@@ -224,6 +252,7 @@ body{
 	background-color: rgba(0, 0, 0, .5);
 	margin-bottom: 5px;
 	margin-top: 10px;
+	background-image: linear-gradient(#032C55,black);
 }
 .footer a{
 	text-decoration: none;
@@ -467,16 +496,34 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	background-image: linear-gradient(#032C55,black);
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .headerCartelera img{
 	height: 70px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	transition: height 1s,width 1s;
+}
+.headerCartelera img:hover{
+	height: 80px;
 }
 .headerCartelera h1{
 	color: white;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	animation-duration: 3s;
+	animation-name: apareceTitulo;
+	animation-iteration-count: infinite;
+}
+@keyframes apareceTitulo{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 
 .iconosCartelera{
@@ -500,6 +547,7 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	background-image: linear-gradient(#032C55,#0A233D);
 }
 .navegacionCartelera a:hover{
 	color: #0D4C8A;
@@ -510,6 +558,7 @@ body{
 	margin-top: 50px;
 	background-color: rgba(0, 0, 0, .5);
 	margin-bottom: 50px;
+	background-image: linear-gradient(#032C55,black);
 
 }
 .tituloCartelera h1{
@@ -529,6 +578,7 @@ body{
 	font-family: oswald;
 	font-size: 30px;
 	background-color: #0A233D;
+	background-image: linear-gradient(#032C55,black);
 
 }
 .peliculaUno img{
@@ -547,6 +597,7 @@ body{
 	background-color: #0A233D;
 	margin-top: 10px;
 	margin-bottom: 50px;
+	background-image: linear-gradient(#032C55,black);
 
 }
 .peliculaDos{
@@ -559,6 +610,7 @@ body{
 	font-family: oswald;
 	font-size: 30px;
 	background-color: #0A233D;
+	background-image: linear-gradient(#032C55,black);
 }
 .peliculaDos img{
 	margin-top: 20px;
@@ -576,6 +628,7 @@ body{
 	background-color: #0A233D;
 	margin-top: 10px;
 	margin-bottom: 50px;
+	background-image: linear-gradient(#032C55,black);
 }
 
 .peliculaTres{
@@ -588,6 +641,7 @@ body{
 	font-family: oswald;
 	font-size: 30px;
 	background-color: #0A233D;
+	background-image: linear-gradient(#032C55,black);
 
 }
 .peliculaTres img{
@@ -607,6 +661,7 @@ body{
 	background-color: #0A233D;
 	margin-top: 10px;
 	margin-bottom: 50px;
+	background-image: linear-gradient(#032C55,black);
 }
 
 .peliculaCuatro{
@@ -619,6 +674,7 @@ body{
 	font-family: oswald;
 	font-size: 30px;
 	background-color: #0A233D;
+	background-image: linear-gradient(#032C55,black);
 
 }
 .peliculaCuatro img{
@@ -637,6 +693,7 @@ body{
 	background-color: #0A233D;
 	margin-top: 10px;
 	margin-bottom: 50px;
+	background-image: linear-gradient(#032C55,black);
 }
 
 .peliculaCinco{
@@ -648,6 +705,7 @@ body{
 	font-family: oswald;
 	font-size: 30px;
 	background-color: #0A233D;
+	background-image: linear-gradient(#032C55,black);
 
 }
 .peliculaCinco img{
@@ -666,6 +724,7 @@ body{
 	background-color: #0A233D;
 	margin-top: 10px;
 	margin-bottom: 50px;
+	background-image: linear-gradient(#032C55,black);
 }
 
 
@@ -702,6 +761,7 @@ body{
 	flex-direction: row;
 	justify-content: space-between;
 	background-color: rgba(0, 0, 0, .5);
+	background-image: linear-gradient(#032C55,black);
 	
 	margin-bottom: 5px;
 	margin-top: 10px;
@@ -928,16 +988,32 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	background-image: linear-gradient(#032C55,black);
 }
 .headerContacto img{
 	height: 70px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	transition: height 1s,width 1s;
+}
+.headerContacto img:hover{
+	height: 80px;
 }
 .headerContacto h1{
 	color: white;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	animation-duration: 3s;
+	animation-name: apareceTitulo;
+	animation-iteration-count: infinite;
+}
+@keyframes apareceTitulo{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 
 .iconosContacto{
@@ -961,6 +1037,7 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	background-image: linear-gradient(#032C55,#0A233D);
 }
 .navegacionContacto a:hover{
 	color: #0D4C8A;
@@ -971,6 +1048,7 @@ body{
 	margin-top: 50px;
 	background-color: rgba(0, 0, 0, .5);
 	margin-bottom: 50px;
+	background-image: linear-gradient(#032C55,black);
 
 }
 .tituloContacto h1{
@@ -985,12 +1063,14 @@ body{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+
 }
 .formulario{
 	background-color: #2C3563;
 	margin-bottom: 20px;
 	padding: 2rem;
 	border-radius: .5rem;
+	background-image: linear-gradient(#032C55,black);
 }
 .campoFormulario{
 	text-align: center;
@@ -1047,7 +1127,7 @@ body{
 	flex-direction: row;
 	justify-content: space-between;
 	background-color: rgba(0, 0, 0, .5);
-	
+	background-image: linear-gradient(#032C55,black);
 	margin-bottom: 50px;
 	margin-top: 50px;
 }
@@ -1170,16 +1250,32 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	background-image: linear-gradient(#032C55,black);
 }
 .headerPrecios img{
 	height: 70px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	transition: height 1s,width 1s;
+}
+.headerPrecios img:hover{
+	height: 80px;
 }
 .headerPrecios h1{
 	color: white;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	animation-duration: 3s;
+	animation-name: apareceTitulo;
+	animation-iteration-count: infinite;
+}
+@keyframes apareceTitulo{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 
 .iconosPrecios{
@@ -1203,6 +1299,7 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	background-image: linear-gradient(#032C55,#0A233D);
 }
 .navegacionPrecios a:hover{
 	color: #0D4C8A;
@@ -1215,6 +1312,7 @@ body{
 	background-color: rgba(0, 0, 0, .5);
 	align-items: center;
 	margin-top: 50px;
+	background-image: linear-gradient(#032C55,black);
 }
 .tituloPrecios2d h1{
 	color: white;
@@ -1243,6 +1341,7 @@ body{
 	border: solid white;
 	background-color: #2C3563;
 	text-align: center;
+	background-image: linear-gradient(#032C55,black);
 }
 .tablaPrecios__celdaDescripcion{
 	border-bottom: solid white;
@@ -1290,6 +1389,7 @@ body{
 	background-color: rgba(0, 0, 0, .5);
 	align-items: center;
 	margin-top: 50px;
+	background-image: linear-gradient(#032C55,black);
 }
 .tituloPrecios3d h1{
 	color: white;
@@ -1307,6 +1407,7 @@ body{
 	grid-area: tituloSnacks;
 	height: 100px;
 	background-color: rgba(0, 0, 0, .5);
+	background-image: linear-gradient(#032C55,black);
 }
 .tituloSnacks h1{
 	color: white;
@@ -1325,6 +1426,7 @@ body{
 	height: 100px;
 	background-color: rgba(0, 0, 0, .5);
 	margin-top: 50px;
+	background-image: linear-gradient(#032C55,black);
 
 }
 .tituloCombos h1{
@@ -1373,6 +1475,7 @@ body{
 	background-color: rgba(0, 0, 0, .5);
 	margin-bottom: 50px;
 	margin-top: 50px;
+	background-image: linear-gradient(#032C55,black);
 }
 .footerPrecios a{
 	text-decoration: none;
@@ -1496,16 +1599,32 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	background-image: linear-gradient(#032C55,black);
 }
 .headerSalas img{
 	height: 70px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	transition: height 1s,width 1s;
+}
+.headerSalas img:hover{
+	height: 80px;
 }
 .headerSalas h1{
 	color: white;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	animation-duration: 3s;
+	animation-name: apareceTitulo;
+	animation-iteration-count: infinite;
+}
+@keyframes apareceTitulo{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 
 .iconosSalas{
@@ -1529,6 +1648,7 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	background-image: linear-gradient(#032C55,#0A233D);
 }
 .navegacionSalas a:hover{
 	color: #0D4C8A;
@@ -1538,6 +1658,7 @@ body{
 	height: 100px;
 	background-color: rgba(0, 0, 0, .5);
 	margin-top: 50px;
+	background-image: linear-gradient(#032C55,black);
 }
 .tituloSalas h1{
 	color: white;
@@ -1551,6 +1672,7 @@ body{
 	margin-top: 50px;
 	display: flex;
 	justify-content: space-between;
+	background-image: linear-gradient(#032C55,black);
 }
 .tituloSalas2d h2{
 	color: white;
@@ -1589,6 +1711,7 @@ body{
 	margin-top: 50px;
 	display: flex;
 	justify-content: space-between;
+	background-image: linear-gradient(#032C55,black);
 }
 .tituloSalas3d h2{
 	color: white;
@@ -1611,6 +1734,7 @@ body{
 	height: 100px;
 	background-color: rgba(0, 0, 0, .5);
 	margin-top: 50px;
+	background-image: linear-gradient(#032C55,black);
 }
 .tituloUbicacion h1{
 	color: white;
@@ -1646,6 +1770,7 @@ body{
 	border-radius: 10px;
 	text-decoration: none;
 }
+
 .contenidoMontevideo__alineacion{
 	margin-bottom: 20px;
 }
@@ -1729,6 +1854,7 @@ body{
 	background-color: rgba(0, 0, 0, .5);
 	margin-bottom: 50px;
 	margin-top: 50px;
+	background-image: linear-gradient(#032C55,black);
 }
 .footerSalas a{
 	text-decoration: none;
